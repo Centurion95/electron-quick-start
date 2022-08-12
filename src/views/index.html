@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+  <link href="../css/styles.css" rel="stylesheet">
+  <title>Hello World!</title>
+</head>
+
+<body>
+  <h1>Hello World!</h1>
+  <hr>
+
+  We are using Node.js <span id="node-version"></span>, <br>
+  Chromium <span id="chrome-version"></span>, <br>
+  and Electron <span id="electron-version"></span>.
+
+  <hr>
+  <p>Username: <strong id="lblUsername">...</strong></p>
+
+  <hr>
+  <p>Current theme source: <strong id="theme-source">System</strong></p>
+  <button id="toggle-dark-mode">Toggle Dark Mode</button>
+  <button id="reset-to-system">Reset to System Theme</button>
+
+  <hr>
+  <p>After launching this application, you should see the system notification.</p>
+  <p id="output"><u>Click it to see the effect in this interface.</u></p>
+
+  <hr>
+  <footer>rc95</footer>
+  <!-- You can also require other files to run in this process -->
+  <script src="../js/renderer.js"></script>
+</body>
+
+</html>
